@@ -9,19 +9,18 @@
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
     <script src="js/jquery.js"></script>
     <script src="js/mediaelement-and-player.min.js"></script>
-    <script src="skip-back/skip-back-i18n.js"></script>
-    <script src="skip-back/skip-back.min.js"></script>
     <link href="css/mediaelementplayer.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="skip-back/skip-back.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     
   </head>
   <body>
     <div class="wrapper">
       
+      <h2>Video Example</h2>
+      
       <div class="video">
-        <video>
+        <video width="852" height="480">
           <source src="video/video.mp4" type="video/mp4">
           <source src="video/video.ogg" type="video/ogg">
           <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
@@ -36,10 +35,11 @@
       <p>
         Whether a wire comes straight from the ISP hookup outside your house, or it travels over radio waves from your roof, the first stop a wire will make once inside your house, is at your modem. A modem is what connects the internet to your network at home. A few common residential modems are DSL or
       </p>
+    
     </div><!--.wrapper-->
     
     <script>
-      $('video').mediaelementplayer({
+      $('video, audio').mediaelementplayer({
         features: ['playpause', 'tracks', 'progress','fullscreen']
       });
     </script>
