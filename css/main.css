@@ -13,6 +13,14 @@ p.transcript {
   padding: 0 30px;
 }
 
+.highlight {
+  background-color: cornsilk;
+}
+
+.mejs__controls:not([style*="display: none"]) {
+  background: #5FCF80;
+}
+
 a {
   color: orange;
 }
@@ -25,10 +33,6 @@ a {
 
 video {
   max-width: 100%;
-}
-
-.highlight {
-  background-color: beige;
 }
 
 @media screen and (min-width: 768px) {

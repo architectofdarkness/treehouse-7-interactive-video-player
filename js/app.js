@@ -23,6 +23,7 @@ video.addEventListener('timeupdate', () => {
   }
 });
 
+// Set currentTime of video based on user clicks on transcript sentences
 transcriptDiv.addEventListener('click', (e) => {
   let sentence = e.target;
   let time = parseFloat(sentence.getAttribute('data-time'));
