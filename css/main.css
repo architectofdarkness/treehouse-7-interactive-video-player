@@ -9,7 +9,7 @@ body {
   color: #384047;
 }
 
-p {
+p.transcript {
   padding: 0 30px;
 }
 
@@ -27,8 +27,12 @@ video {
   max-width: 100%;
 }
 
+.highlight {
+  background-color: beige;
+}
+
 @media screen and (min-width: 768px) {
-  p {
+  p.transcript {
     padding: 0;
   }
 }
