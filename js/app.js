@@ -14,7 +14,7 @@ video.addEventListener('timeupdate', () => {
       const sentenceEnd = parseFloat(nextSentence.getAttribute('data-time'));
       let sentenceStart = parseFloat(sentence.getAttribute('data-time'));
 
-      if (sentenceStart <= currentTime && currentTime <= sentenceEnd) {
+      if (sentenceStart <= currentTime && currentTime < sentenceEnd) {
         sentence.className = "highlight";
       } else {
         sentence.className = "";
